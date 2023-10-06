@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /m*
+Sitemap: https://link-masker.sivaramp.com
