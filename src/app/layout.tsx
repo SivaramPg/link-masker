@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: 'Link Masker',
     description: 'Mask your original URLs in a fun & fast way!',
     creator: '@SivaramPg',
-    card: 'summary',
+    card: 'summary_large_image',
     images: [
       {
         type: 'image/png',
