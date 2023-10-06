@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Mulish } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
+
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
@@ -24,7 +25,15 @@ export const metadata: Metadata = {
     description: 'Mask your original URLs in a fun & fast way!',
     creator: '@SivaramPg',
     card: 'summary',
-    images: [],
+    images: [
+      {
+        type: 'image/png',
+        url: '/og.png',
+        width: 800,
+        height: 800,
+        alt: 'Link Masker',
+      },
+    ],
   },
   openGraph: {
     title: 'Link Masker',
@@ -33,7 +42,15 @@ export const metadata: Metadata = {
     siteName: 'Link Masker',
     url: new URL('https://link-masker.sivaramp.com'),
     type: 'website',
-    images: [],
+    images: [
+      {
+        type: 'image/png',
+        url: '/og.png',
+        width: 800,
+        height: 800,
+        alt: 'Link Masker',
+      },
+    ],
   },
   icons: {
     icon: ['/favicon.ico'],
