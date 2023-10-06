@@ -17,7 +17,7 @@ export function LinkElement({ uniqueId }: { uniqueId: string }) {
         target="_blank"
         className="p-4 underline underline-offset-4 text-indigo-700 font-bold text-lg truncate"
       >
-        {new URL(`/m/${uniqueId}`, window.location.href).toString()}
+        {new URL(`/m/${uniqueId}`, window.location.host).toString()}
       </a>
       {copied ? (
         <Image
@@ -26,6 +26,7 @@ export function LinkElement({ uniqueId }: { uniqueId: string }) {
           width={32}
           height={32}
           className="mr-2 cursor-normal"
+          priority
         />
       ) : (
         <Image
@@ -34,6 +35,7 @@ export function LinkElement({ uniqueId }: { uniqueId: string }) {
           width={32}
           height={32}
           className="mr-2 cursor-pointer"
+          priority
           onClick={() =>
             copy(new URL(`/m/${uniqueId}`, window.location.href).toString())
           }
