@@ -1,7 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://swapi.info',
-  output: 'export',
+  siteUrl: 'https://link-masker.sivaramp.com',
   generateIndexSitemap: false,
-  exclude: '/api*',
 }

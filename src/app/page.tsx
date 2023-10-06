@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { UrlForm } from './components/UrlForm'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <h2 className="font-medium text-xl">
           Mask your URLs in a fun & fast way!
         </h2>
+        <UrlForm />
       </div>
     </main>
   )
