@@ -17,7 +17,9 @@ export function LinkElement({ uniqueId }: { uniqueId: string }) {
         target="_blank"
         className="p-4 underline underline-offset-4 text-indigo-700 font-bold text-lg truncate"
       >
-        {new URL(`/m/${uniqueId}`, window.location.host).toString()}
+        {new URL(`/m/${uniqueId}`, window.location.origin)
+          .toString()
+          .replaceAll('https://', '')}
       </a>
       {copied ? (
         <Image
